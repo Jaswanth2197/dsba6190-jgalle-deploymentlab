@@ -5,6 +5,8 @@ locals {
     region      = var.tag_region
     environment = var.environment
   }
+
+
 }
 
 // Existing Resources
@@ -20,7 +22,7 @@ resource "random_integer" "deployment_id_suffix" {
   min = 100
   max = 999
 
-  
+
 }
 
 // Resource Group
